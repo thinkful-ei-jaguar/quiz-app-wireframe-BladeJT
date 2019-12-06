@@ -3,6 +3,10 @@ const STORE = [
 
 ]
 
+// Our basic render function
+function renderQuizApp() {
+
+}
 
 // startQuiz -to start submit begin quiz
 function startQuiz(){
@@ -37,3 +41,14 @@ function retakeQuiz(){
 
 }
 
+
+
+//The big function that calls the others
+function handleQuizApp() {
+  
+  function renderQuizApp();
+  function startQuiz();
+  function nextQuestion();
+  function submitAnswer();
+
+}
