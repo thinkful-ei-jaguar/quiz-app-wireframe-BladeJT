@@ -3,3 +3,8 @@
   border: 1px solid black;
 }
 
+h2.question-text {
+  border: 1px solid black;
+  padding-bottom: 20px;
+}
+

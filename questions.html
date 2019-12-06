@@ -5,51 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="/index.css">
-  <title>Quiz Question Page</title>
+  <title>Jaguar Quiz App</title>
 </head>
 <body>
   <header>
-    <div class = "quiz-title">
-      <h1>Test your jaguar knowledge:</h1>      
-    </div>
-   </header>
+    <h1 class = 'quiz-title'>Jaguar Facts Quiz</h1>      
+  </header>
 
-  <section class = 'question-page'>
-    <div class = 'question-container'>
-      <span id = 'question'>Question here</span>
-    </div>
-  </section>
+  <form class = 'question-section'>
+    <h2 class = 'question-text'>Question here</span>
+  </form>
 
-  <form id = 'radio-answers'>
+  <form class = 'radio-answers'>
     
     <!-- We'll clean this up with dynamic stuff later-->
     <label for = 'option1' class = 'answers'>
-      <input class = 'radio-button' type = 'radio' id = 'option1' required>
+      <input class = 'radio-button' type = 'radio' name = 'answer' id = 'option1' checked required>
       <span class = 'choices'>Answer 1</span>
     </label>
 
     <label for = 'option2' class = 'answers'>
-      <input class = 'radio-button' type = 'radio' id = 'option2' required>
+      <input class = 'radio-button' type = 'radio' name = 'answer' id = 'option2' required>
       <span class = 'choices'>Answer 2</span>
     </label>
 
     <label for = 'option3' class = 'answers'>
-      <input class = 'radio-button' type = 'radio' id = 'option3' required>
+      <input class = 'radio-button' type = 'radio' name = 'answer' id = 'option3' required>
       <span class = 'choices'>Answer 3</span>
     </label>  
 
     <label for = 'option4' class = 'answers'>
-      <input class = 'radio-button' type = 'radio' id = 'option4' required>
+      <input class = 'radio-button' type = 'radio' name = 'answer' id = 'option4' required>
       <span class = 'choices'>Answer 4</span>
     </label>
 
     <div class = 'score-container'>
-      <p class = 'status'><span id = 'current-score'>Your score so far: x/5</span></p>
+        <p id = 'current-score'>Your score so far: x/5</span>
+        <p id = 'current-question'>Question #: x</span>
     </div>
-      
-    <div class = 'submit-next-buttons'>
-      <input type = 'button' id = 'submit-button' value = 'Submit answer'>
-    </div>
+    <!-- We will remove all anchors and use event listeners in the final app-->  
+    <a href = 'feedback.html'><input type = 'button' id = 'submit-button' value = 'Submit answer'></a>
   </form>
 </body>
 </html>
