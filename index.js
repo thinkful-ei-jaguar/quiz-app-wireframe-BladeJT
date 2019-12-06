@@ -7,11 +7,8 @@ const STORE = [
 // startQuiz -to start submit begin quiz
 function startQuiz(){
 
-};
-// Question page - Select answer radio button - required
-function selectAnswer(){
-
 }
+
 //disable other answers when submit answer
 
 //submit - submit answer button - will tell you correct answer and give fact to support
@@ -21,6 +18,9 @@ function submitAnswer(){
 
 function showCorrectAnswer(){
 
+}
+function nextQuestion(){
+    
 }
 //keep track of score
 function keepScore(){
@@ -37,14 +37,3 @@ function retakeQuiz(){
 
 }
 
-function handleQuizResults(){
-    startQuiz();
-    selectAnswer();
-    submitAnswer();
-    showCorrectAnswer();
-    keepScore();
-    showResults();
-    retakeQuiz();
-}
-
-$(handleShoppingList);
